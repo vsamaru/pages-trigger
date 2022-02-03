@@ -1,11 +1,13 @@
 name: Deploy Pages project
 on:
-  repository_dispatch:
-  workflow_dispatch:
-    inputs:
-      project_name:
-        description: 'Project name to deploy'
-        required: true
+  - push
+  
+  # repository_dispatch:
+  # workflow_dispatch:
+    #inputs:
+      #project_name:
+       # description: 'Project name to deploy'
+        #required: true
 
 jobs:
   deploy_project:
